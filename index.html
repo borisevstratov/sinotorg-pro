@@ -15,8 +15,11 @@
 		<!-- Site Title -->
 		<title>Синоторг — Логистика и доставка товаров из Китая</title>
 
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet">
 		<!--
 			CSS
 			============================================= -->
@@ -53,7 +56,6 @@
 					<nav id="nav-menu-container">
 						<ul class="nav-menu">
 							<li class="menu-active"><a href="index.html">Главная</a></li>
-							<li><a href="about.html">О нас</a></li>
 							<li><a href="services.html">Услуги</a></li>
 							<li><a href="contact.html">Контакты</a></li>
 						</ul>
@@ -63,21 +65,23 @@
 		</header><!-- #header -->
 
 		<!-- start banner Area -->
-		<section class="banner-area relative" id="home">
+		<section class="banner-area relative" id="hero">
 			<div class="overlay overlay-bg"></div>
-			<div class="container">
+			<div class="container main-page-header-hero">
 				<div class="row fullscreen d-flex align-items-center justify-content-center">
 					<div class="banner-content col-lg-12 col-md-12">
-						<h1 class="text-uppercase" style="color: white; font-weight: 900;">Синоторг</h1>
-						<h2>
+						<h1 class="text-uppercase" style="font-weight: 600;">Синоторг</h1>
+						<h2 class="text-white">
 							Логистика и доставка товаров из Китая
 						</h2>
+						<br>
 						<p class="text-white">
-							Синоторг — Ваш надежный партнер в мире логистики и таможенного оформления.<br />
-							Мы специализируемся на доставке грузов из Китая в Россию, независимо от их объема - от
-							десяти килограмм и до сотен тонн.
+							Более 10 лет на рынке грузоперевозок. Ваш надежный партнер в мире логистики и таможенного
+							оформления<br />
+							Мы специализируемся на доставке грузов из Китая в Россию любого объема — от
+							нескольких килограмм и до сотен тонн
 						</p>
-						<a href="#" class="primary-btn header-btn text-uppercase">Запрос на доставку</a>
+						<a href="#pricing" class="primary-btn header-btn text-uppercase">Запрос на доставку</a>
 					</div>
 				</div>
 			</div>
@@ -141,55 +145,8 @@
 		</section>
 		<!-- End cat Area -->
 
-
-		<!-- Start home-about Area -->
-		<section class="home-about-area section-gap" id="about">
-			<div class="container">
-				<div class="row justify-content-center align-items-center">
-					<div class="col-lg-8 col-md-12 home-about-left">
-						<h6>Brand new app to blow your mind</h6>
-						<h1>
-							We’ve made a life <br>
-							that will change you
-						</h1>
-						<p class="sub">We are here to listen from you deliver exellence</p>
-						<p class="pb-20">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-							ut labore et dolore magna aliqua. Ut enim ad minim. Lorem ipsum dolor sit amet, consectetur
-							adipisicing elit, sed do eiusmod temp or incididunt ut labore et dolore magna aliqua. Ut
-							enim ad minim. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-						</p>
-						<a class="primary-btn" href="#">Get Started Now</a>
-					</div>
-					<div class="col-lg-4 col-md-12 home-about-right relative">
-						<form class="form-wrap" action="#">
-							<h4 class="text-white pb-20">Request a Quote</h4>
-							<div class="form-select" id="service-select"">
-									<select>
-										<option value=" 1">Select Service</option>
-								<option value="2">Service One</option>
-								<option value="3">Service Two</option>
-								<option value="4">Service Three</option>
-								<option value="5">Service Four</option>
-								</select>
-							</div>
-							<input type="text" class="form-control" placeholder="name">
-							<input type="phone" class="form-control" placeholder="Phone Number">
-							<input type="email" class="form-control" placeholder="Email Address">
-							<textarea name="message" id="" cols="30" rows="5" placeholder="Message"
-								class="form-control"></textarea>
-							<button class="primary-btn">Request Free Quote</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End home-about Area -->
-
-
 		<!-- Start service Area -->
-		<section class="service-area section-gap" id="service">
+		<section class="service-area section-gap" id="services">
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-md-12 pb-30 header-text text-center">
@@ -200,8 +157,7 @@
 					<div class="col-lg-4">
 						<div class="single-service">
 							<div class="thumb">
-								<img src="https://placehold.jp/30/dd6699/ffffff/690x480.png?text=placeholder+image"
-									alt="">
+								<img src="/img/services/items-lookup.png" alt="">
 							</div>
 							<h4>Поиск товара</h4>
 							<p>
@@ -212,8 +168,7 @@
 					<div class="col-lg-4">
 						<div class="single-service">
 							<div class="thumb">
-								<img src="https://placehold.jp/30/dd6699/ffffff/690x480.png?text=placeholder+image"
-									alt="">
+								<img src="/img/services/customs-order.png" alt="">
 							</div>
 							<h4>Таможенное оформление</h4>
 							<p>
@@ -226,21 +181,19 @@
 					<div class="col-lg-4">
 						<div class="single-service">
 							<div class="thumb">
-								<img src="https://placehold.jp/30/dd6699/ffffff/690x480.png?text=placeholder+image"
-									alt="">
+								<img src="/img/services/cargo-support.png" alt="">
 							</div>
 							<h4>Сопровождение и обслуживание грузов</h4>
 							<p>
 								Наши услуги по сопровождению и обслуживанию грузов предназначены для обеспечения
-								безопасности и эффективной доставки вашего груза из Китая в Россию.
+								безопасной доставки вашего груза из Китая в Россию.
 							</p>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="single-service">
 							<div class="thumb">
-								<img src="https://placehold.jp/30/dd6699/ffffff/690x480.png?text=placeholder+image"
-									alt="">
+								<img src="/img/services/documents-set.png" alt="">
 							</div>
 							<h4>Оформление комплекта документов</h4>
 							<p>
@@ -252,22 +205,80 @@
 					<div class="col-lg-4">
 						<div class="single-service">
 							<div class="thumb">
-								<img src="https://placehold.jp/30/dd6699/ffffff/690x480.png?text=placeholder+image"
-									alt="">
+								<img src="/img/services/procurement-china.png" alt="">
 							</div>
-							<h4>Складские услуги</h4>
+							<h4>Закупка товаров в Китае</h4>
 							<p>
-								Наши собственные склады оборудованы современными системами хранения и безопасности. Мы
-								предоставляем услуги временного хранения грузов на наших складах, что обеспечивает
-								гибкость и удобство для наших клиентов.
+								Мы предлагаем услугу закупки товаров в Китае, обеспечивая поиск надежных поставщиков,
+								оплату, контроль качества и таможенное оформление.
 							</p>
 						</div>
 					</div>
 					<div class="col-lg-4">
 						<div class="single-service">
 							<div class="thumb">
-								<img src="https://placehold.jp/30/dd6699/ffffff/690x480.png?text=placeholder+image"
-									alt="">
+								<img src="/img/services/payment-processing.png" alt="">
+							</div>
+							<h4>Оплата поставщику</h4>
+							<p>
+								Мы гарантируем, что ваши финансовые операции
+								будут проведены надежно и в согласованные сроки.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="single-service">
+							<div class="thumb">
+								<img src="/img/services/factory-samples.png" alt="">
+							</div>
+							<h4>Заказ и доставка образцов</h4>
+							<p>
+								Заказ и доставка образцов товаров из Китая для вас. Это позволит вам
+								проверить качество и соответствие товаров вашим требованиям перед оформлением крупных
+								партий.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="single-service">
+							<div class="thumb">
+								<img src="/img/services/supplier-discovery.png" alt="">
+							</div>
+							<h4>Поиск поставщика</h4>
+							<p>
+								С нашими связями и опытом мы выберем подходящих поставщиков, учитывая ваши требования.
+								Это обеспечивает вам доступ к качественным товарам и надежным бизнес-партнерам.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="single-service">
+							<div class="thumb">
+								<img src="/img/services/product-certification.png" alt="">
+							</div>
+							<h4>Сертификация товаров</h4>
+							<p>
+								Мы берем на себя организацию сертификации ваших товаров в соответствии с требованиями
+								Российской Федерации: все необходимые документы, включая сертификаты и декларации.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="single-service">
+							<div class="thumb">
+								<img src="/img/services/obtaining-permits.png" alt="">
+							</div>
+							<h4>Получение разрешительных документов </h4>
+							<p>
+								Проведение мероприятий для получения всех необходимых разрешительных документов,
+								включая сертификаты соответствия, декларации соответствия, СГР и прочие</p>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="single-service">
+							<div class="thumb">
+								<img src="/img/services/complete-registration.png" alt="">
 							</div>
 							<h4>Полная процедура оформления</h4>
 							<p>
@@ -279,13 +290,13 @@
 					<div class="col-lg-4">
 						<div class="single-service">
 							<div class="thumb">
-								<img src="https://placehold.jp/30/dd6699/ffffff/690x480.png?text=placeholder+image"
-									alt="">
+								<img src="/img/services/insurance.png" alt="">
 							</div>
 							<h4>Страхование</h4>
 							<p>
-								inappropriate behavior is often laughed off as “boys will be boys,” women face higher
-								conduct women face higher conduct.
+								Услуги страхования вашего груза на протяжении всего пути доставки. Это
+								обеспечивает дополнительную защиту и гарантирует компенсацию в случае непредвиденных
+								событий.
 							</p>
 						</div>
 					</div>
@@ -294,6 +305,43 @@
 		</section>
 		<!-- End service Area -->
 
+
+		<!-- Start home-about Area -->
+		<section class="home-about-area section-gap" id="pricing">
+			<div class="container">
+				<div class="row justify-content-center align-items-top">
+					<div class="col-lg-6 col-md-12 home-about-left">
+						<h1>
+							Расчет стоимости
+						</h1>
+						<p class="sub">
+							Стоимость логистических услуг рассчитывается индивидуально для каждого конкретного случая.
+							Наши специалисты обладают глубокими знаниями в области логистики и складских технологий, а
+							также хорошо знакомы с законодательством Российской Федерации.
+						</p>
+						<p class="pb-20">
+							Для расчета стоимости вы можете заполнить форму или связаться с нами:
+						</p>
+						<div style="font-size: 18px;">
+							<a class="genric-btn info-border circle mr-3" href="tel:+79216525555" target="_blank">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								Позвонить
+							</a>
+							<a class="genric-btn success circle" href="https://wa.me/79216525555" target="_blank">
+								<i class="fa fa-whatsapp" aria-hidden="true"></i>
+								WhatsApp
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-12 p-5" style="background-color: white;">
+						<script src="https://yastatic.net/s3/frontend/forms/_/embed.js"></script>
+						<iframe src="https://forms.yandex.ru/cloud/650755d9c769f1e35c49c8da/?iframe=1"
+							name="ya-form-650755d9c769f1e35c49c8da" width="100%"></iframe>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End home-about Area -->
 
 		<!-- Start faq Area -->
 		<section class="faq-area section-gap relative">
@@ -349,54 +397,16 @@
 		</section>
 		<!-- End faq Area -->
 
-
-		<!-- Start project Area -->
-		<section class="project-area section-gap" id="project">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-8 pb-30 header-text text-center">
-						<h1 class="mb-10">Latest Finished Projects</h1>
-						<p>
-							Who are in extremely love with eco friendly system..
-						</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<a href="img/p1.jpg" class="img-gal">
-							<img class="img-fluid single-project" src="img/p1.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-4 col-md-4">
-						<a href="img/p2.jpg" class="img-gal">
-							<img class="img-fluid single-project" src="img/p2.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<a href="img/p3.jpg" class="img-gal">
-							<img class="img-fluid single-project" src="img/p3.jpg" alt="">
-						</a>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<a href="img/p4.jpg" class="img-gal">
-							<img class="img-fluid single-project" src="img/p4.jpg" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End project Area -->
-
 		<!-- start footer Area -->
 		<footer class="footer-area section-gap">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-5 col-md-6 col-sm-6">
+					<div class="col-lg-6 col-md-6 col-sm-6">
 						<div class="single-footer-widget">
 							<h6>О компании</h6>
 							<p>
 								Компания «Синоторг» — это ваш надежный партнер в области логистики и таможенного
-								оформления грузов из Китая. Наша деятельность сосредоточена на обеспечении успешных
+								оформления грузов из Китая. Наша деятельность сосредоточена на обеспечении
 								поставок товаров от производителей и поставщиков в Китае к вам. С нами доставка из Китая
 								никогда не будет проблемой.
 							</p>
@@ -406,15 +416,15 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-lg-5 col-md-6 col-sm-6">
+					<div class="col-lg-4 col-md-6 col-sm-6">
 					</div>
 					<div class="col-lg-2 col-md-6 col-sm-6 social-widget">
 						<div class="single-footer-widget">
 							<h6>Контакты</h6>
 							<div class="footer-social d-flex align-items-center" style="font-size: 24px;">
-								<a href="tel:+79216525555"><i class="fa fa-phone"></i></a>
-								<a href="https://wa.me/79216525555"><i class="fa fa-whatsapp"></i></a>
-								<a href="mailto:info@sinotorg.pro"><i class="fa fa-envelope"></i></a>
+								<a href="tel:+79216525555" target="_blank"><i class="fa fa-phone"></i></a>
+								<a href="https://wa.me/79216525555" target="_blank"><i class="fa fa-whatsapp"></i></a>
+								<a href="mailto:info@sinotorg.pro" target="_blank"><i class="fa fa-envelope"></i></a>
 							</div>
 						</div>
 					</div>

@@ -2670,7 +2670,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .faq-area {
-  background: url(../img/fact.jpg) center;
+  background: url(../img/services/cargo-wide.png) center;
   background-size: cover;
 }
 
@@ -3600,3 +3600,15 @@ body.mobile-nav-active #mobile-nav-toggle {
                End Blog Details  Page style
 ################
 */
+
+.main-page-header-hero {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white !important;
+  }
+}
