@@ -2646,7 +2646,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-service:hover .thumb img {
-  transform: scale(1.1) rotate(-2deg);
+  /* transform: scale(1.1) rotate(-2deg); */
 }
 
 @media (max-width: 960px) {
